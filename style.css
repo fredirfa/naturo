@@ -1,0 +1,179 @@
+:root {
+    --Vf: #5C703F;
+    --Vc: #F7FFF3;
+    --Bf: #134963;
+    --Bc: #DFF5FF;
+    --accent-hover: #CA796C;
+    --txt-color:#222222;
+    --cta-color:#8AA95B;
+   /* --mediasmall:   */
+
+
+    --body-backgroundcolor: #F2F2F0;
+    --max-page-w: 1250px;
+    --page-inline-padding: 32px;
+    --body-font: "Mukta", sans-serif;
+    --title-font: "Playfair Display", serif;
+}
+
+
+body {
+    font-family: var(--body-font);
+    font-weight: 300;
+    background-color: var(--body-backgroundcolor);
+    color: var(--txt-color);
+}
+
+.container {
+    max-width: var(--max-page-w);
+    padding: 0;
+    margin: 0 auto;
+}
+
+h2, h3, h4, h5, h6 {
+font-family: var(--title-font);
+}
+h1{
+font-size: 3em;
+font-family: var(--title-font);
+}
+
+
+
+
+main div.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--body-backgroundcolor);
+    min-height: 100%;
+
+    @media (max-width: 780px) {
+        grid-template-columns: 1fr;
+        background-color: #2cc739;
+    }
+
+}
+
+.pagecontenu{
+    padding: 3em;
+}
+
+/*  #####  menu big  ##### */
+
+.menubig>ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+
+.menubig.ul.li.a{
+    justify-items: center;
+
+}
+
+
+nav.menubig {
+    @media (max-width: 781px){
+    display: none;
+
+    };
+    padding: 10px;
+    flex: 1;
+    flex-direction: column;
+
+    text-align: center;
+  align-self: flex-start;
+  position: sticky;
+  top: 0px;
+    }
+
+
+    
+.menubig a{
+    text-decoration: none;
+color: var(--txt-color);
+font-weight: 600;
+}
+
+#logo {
+    
+    max-width: 100%;
+}
+
+.green{
+
+    border: 2px solid;
+    border-bottom: 0px;
+    background-color: var(--Vc);
+    border-color: var(--Vf);
+    font-family: var(--title-font);
+    padding-block: 10px;
+}
+.green>a{
+color: var(--Vf);
+font-weight:bold;
+
+}
+.blue{
+    border: 2px solid;
+    border-bottom: 0px;
+    background-color: var(--Bc);
+    border-color: var(--Bf);
+    font-family: var(--title-font);
+    padding-block: 10px;
+
+}
+.blue>a {
+    color: var(--Bf);
+    font-weight: bold;
+
+}
+.cta{
+    border: 2px solid;
+    background-color: var(--accent-hover);
+    border-color: var(--Vf);
+    font-family: var(--title-font);
+    padding-block: 10px;
+
+}
+.cta:hover{
+background-color: var(--cta-color);
+
+}
+.cta>a{
+    display: block;
+    margin: 1em auto;
+    color: black;
+    /*font-weight: bold;*/
+
+}
+/*  #####  menu small  ##### */
+.menusmall {
+    @media (min-width: 780px) {
+        display: none;
+    }
+
+    ;
+
+}
+
+
+/*  #####   main  ##### */
+
+.sepaB{
+/* position: relative;
+left: -10px;
+height: 1em; */
+width: 70%;
+background: linear-gradient(to right,var(--Bf), var(--body-backgroundcolor)) ;
+
+
+}
+.sepaV {
+
+    height: 1em;
+    width: 70%;
+ /*   background: linear-gradient(to right, var(--Vf), var(--body-backgroundcolor));*/
+ /*   background: linear-gradient(to right, var(--Vc), var(--body-backgroundcolor));*/
+    background: linear-gradient(to right, var(--Vf), var(--body-backgroundcolor));
+}
