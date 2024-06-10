@@ -226,7 +226,7 @@ background-color: var(--cta-color);
 
 
     display: block;
-    position:absolute
+    position:absolute;
     left :0;
     top : 0;
     width:45px ;

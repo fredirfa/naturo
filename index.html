@@ -267,8 +267,41 @@
     <div aria-disabled="true" class="sepaV"></div> <!--  separateur graphique-->
     <!--             contact         -->
         <section aria-label="Formulaire de Contact" id="Acontact" class="contact">
-            <h2> Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores consectetur iusto possimus natus omnis odit error, quidem aliquam dolores molestias ad, ipsum dolorum repudiandae? Eligendi neque ea similique delectus.</p>
+            <h2> Contact ** en cours**</h2>
+
+<form action="donnees_du_formulaire.php" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom"><br />
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email"><br />
+
+    <select>
+        <option value="devis">Demande de premier rendez-vous</option>
+        <option value="question">Demande de rendez-vous</option>
+        <option value="sav">Inscription à un atelier</option>
+        <option value="sav">Autre</option>
+        <!-- Ajoutez autant d'options que nécessaire -->
+    </select><br />
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="6" cols="60"></textarea><br />
+
+    <button type="submit">Envoyer</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
     <div aria-disabled="true" class="sepaV"></div> <!--  separateur graphique-->
     <!--             Atelier          -->
